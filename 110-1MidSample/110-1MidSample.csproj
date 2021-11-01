@@ -67,11 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="eye-slash-solid.svg" />
+    <Content Include="eye-solid.svg" />
     <Content Include="Global.asax" />
     <Content Include="Sample1.aspx" />
     <Content Include="Sample1Com.aspx" />
     <Content Include="Sample2.aspx" />
     <Content Include="Web.config" />
+    <Content Include="youtube-brands.svg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">

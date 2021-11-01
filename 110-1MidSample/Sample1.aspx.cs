@@ -8,7 +8,11 @@ using System.Web.UI.WebControls;
 namespace _110_1MidSample {
     public partial class Sample1 : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            Response.Write(mt_2MD5("1234"));
+            if (IsPostBack == false) {
+                string s_Veri = mt_GenVeriStr();
+                mt_ImgPointer(ref ig_Num, s_Veri);
+                tb_Hid.Text = mt_2MD5(s_Veri);
+            }
         }
 
         // To generate a 4 digital number
