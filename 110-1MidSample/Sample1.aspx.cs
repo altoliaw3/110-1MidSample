@@ -11,7 +11,7 @@ namespace _110_1MidSample {
             if (IsPostBack == false) {
                 string s_Veri = mt_GenVeriStr();
                 mt_ImgPointer(ref ig_Num, s_Veri);
-                tb_Hid.Text = mt_2MD5(s_Veri);
+                hd_Num.Value = mt_2MD5(s_Veri);
             }
         }
 
