@@ -10,6 +10,30 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h2>保單電訪系統</h2><br />
+            <asp:Label runat="server" Text="保單編號" Font-Size="X-Large"></asp:Label><asp:Label ID="lb_Id" runat="server" Text=""></asp:Label>
+            <asp:HiddenField ID="hf_Id" runat="server" />
+            <br />
+            <asp:Label runat="server" Text="聯絡方式" Font-Size="X-Large"></asp:Label>
+            <asp:DropDownList ID="ddl_Type" runat="server"></asp:DropDownList>
+            <br />
+            <asp:DropDownList ID="ddl_ZoneCode" runat="server"></asp:DropDownList>
+            <asp:TextBox ID="tb_Number" runat="server"></asp:TextBox>
+            <br />
+            <asp:Label runat="server" Text="地址" Font-Size="X-Large"></asp:Label>
+            <asp:DropDownList ID="ddl_City" runat="server"></asp:DropDownList>
+            <asp:TextBox ID="tb_Add" runat="server"></asp:TextBox>
+            <br />
+            <asp:Label runat="server" Text="說明" Font-Size="X-Large"></asp:Label>
+            <asp:RadioButtonList ID="rb_Des" runat="server">
+                <asp:ListItem>否</asp:ListItem>
+                <asp:ListItem>是</asp:ListItem>
+            </asp:RadioButtonList>
+            <asp:TextBox ID="tb_Des" runat="server"></asp:TextBox>
+            <br />
+            <asp:Button ID="btn_Submit" runat="server" Text="送出"/>
+            <br />
+            <asp:Label ID="lb_Msg" runat="server" Text=""></asp:Label>
         </div>
     </form>
 </body>
