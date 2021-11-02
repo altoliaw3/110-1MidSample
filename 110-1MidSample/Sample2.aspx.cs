@@ -14,8 +14,7 @@ namespace _110_1MidSample {
         protected void Page_Load(object sender, EventArgs e) {
             if (IsPostBack == false) {
                 string s_Id = mt_GenVeriStr();
-                lb_Id.Text = s_Id;
-                hf_Id.Value = s_Id;
+                lb_Id.Text = s_Id;              
 
 
                 // Add Type

@@ -12,7 +12,6 @@
         <div>
             <h2>保單電訪單</h2><br />
             <asp:Label runat="server" Text="保單編號" Font-Size="X-Large"></asp:Label><asp:Label ID="lb_Id" runat="server" Text=""></asp:Label>
-            <asp:HiddenField ID="hf_Id" runat="server" />
             <br />
             <asp:Label runat="server" Text="聯絡方式" Font-Size="X-Large"></asp:Label>
             <asp:DropDownList ID="ddl_Type" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddl_Type_SelectedIndexChanged"></asp:DropDownList>
@@ -29,7 +28,7 @@
                 <asp:ListItem Selected="True">否</asp:ListItem>
                 <asp:ListItem>是</asp:ListItem>
             </asp:RadioButtonList>
-            <asp:TextBox ID="tb_Des" runat="server"></asp:TextBox>
+            <asp:TextBox ID="tb_Des" runat="server" Width="400px"></asp:TextBox>
             <br />
             <asp:Button ID="btn_Submit" runat="server" Text="送出" OnClick="btn_Submit_Click"/>
             <br />
