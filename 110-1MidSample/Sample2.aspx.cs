@@ -115,7 +115,7 @@ namespace _110_1MidSample {
         }
 
         protected void btn_Submit_Click(object sender, EventArgs e) {
-            lb_Msg.Text = hf_Id.Value + "<br />" +
+            lb_Msg.Text = lb_Id.Text + "<br />" +
                     ddl_Type.SelectedValue + "<br />" +
                     ddl_ZoneCode.SelectedValue + tb_Number.Text + "<br />" +
                     ddl_City.SelectedValue + tb_Add.Text + "<br />";
