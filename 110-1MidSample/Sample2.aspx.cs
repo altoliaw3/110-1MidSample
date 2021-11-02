@@ -114,5 +114,15 @@ namespace _110_1MidSample {
         protected void rb_Des_SelectedIndexChanged(object sender, EventArgs e) {
             mt_ShowDes();
         }
+
+        protected void btn_Submit_Click(object sender, EventArgs e) {
+            lb_Msg.Text = hf_Id.Value + "<br />" +
+                    ddl_Type.SelectedValue + "<br />" +
+                    ddl_ZoneCode.SelectedValue + tb_Number.Text + "<br />" +
+                    ddl_City.SelectedValue + tb_Add.Text + "<br />";
+            if (rb_Des.SelectedValue =="是") {
+                lb_Msg.Text += tb_Des.Text;
+            }
+        }
     }
 }
